@@ -1,0 +1,115 @@
+
+.registration{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration > h1 {
+    margin-block: 3rem;
+}
+
+.registration .slider .item{
+    position: absolute;
+    inset: 7rem 0 7rem 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration .slider .item.active{
+    opacity: 1;
+}
+
+.registration .slider .item .content{
+    border: grey 5px solid;
+    border-radius: 50px;
+    height: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.registration .slider .item .content h2{
+    font-family: var(--FF);
+}
+
+.registration .slider .item .content ul{
+    list-style: none;
+}
+
+.registration .slider .item .content ul p{
+    margin-bottom: 1rem;
+}
+
+.registration .slider .item .content li{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.registration .slider .item .content > button{
+    background-color: grey;
+    border: none;
+    font-family: monospace;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: x-large;
+    color: red;
+    transition: .5s;
+}
+
+.registration .buttons{
+    position: absolute;
+    bottom: 5vh;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.registration .buttons button{
+    background-color: grey;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: black;
+    transition: .5s;
+}
+
+.registration .buttons button:hover{
+    background-color: #eee;
+    color: red;
+}
+
+
+/* sm */
+@media (max-width: 640px) {
+    .registration .slider .item .content h2{
+        font-size: 20px;
+    }
+
+    .registration .slider .item .content > p{
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .registration .slider .item .content ul{
+        font-size: 14px;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+
+}

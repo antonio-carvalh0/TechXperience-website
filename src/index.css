@@ -1,0 +1,30 @@
+:root {
+    --FF: system-ui, sans-serif;
+    --color-golden: #eec73d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--FF);
+    
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+h1, p, a{
+    font-family: var(--FF);
+}
+  

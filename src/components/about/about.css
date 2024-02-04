@@ -1,0 +1,186 @@
+.about {
+    min-height: 100svh;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left :is(.date, .b, .venue, .c){
+    font-size: 40px;
+}
+
+.left .a{
+    font-size: 70px;
+    margin-block: 7vh;
+}
+
+.left .b{
+    margin-bottom: 5vh;
+}
+
+.left .c{
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.left button{
+    margin-bottom: 5vh;
+    background-color: grey;
+    border: none;
+    font-family: monospace;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: red;
+    transition: .5s;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.right > div{
+    margin: 10%;
+}
+
+.right .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right p{
+    background-color: var(--color-golden);
+    border-radius: 40px;
+    padding: 4rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1536px) {
+    .left .a{
+        font-size: 60px;
+    }
+
+    .left :is(.date, .b, .venue, .c){
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .left :is(.date, .b, .venue, .c){
+        font-size: 30px;
+    }
+
+    .left .a{
+        font-size: 50px;
+    }
+
+    .right .p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about{
+        flex-direction: column;
+    }
+
+    .left .a{
+        font-size: 45px;
+    }
+
+    .left :is(.date, .b, .venue, .c){
+        font-size: 35px;
+    }
+
+    .right .p{
+        font-size: 1.3rem;
+    }
+}
+
+
+/* md */
+@media (max-width: 768px) {
+    .left .a{
+        font-size: 45px;
+    }
+
+    .left :is(.date, .b, .venue, .c){
+        font-size: 35px;
+    }
+
+    .right .p{
+        font-size: 1.2rem;
+    }
+}
+  
+  /* sm */
+@media (max-width: 640px) {
+    .left .a{
+        font-size: 40px;
+    }
+
+    .left :is(.date, .b, .venue, .c){
+        font-size: 25px;
+    }
+
+    .right .p{
+        font-size: 1.1rem;
+    }
+
+    .left button{
+        font-size: 17px;
+    }
+}
+  
+  /* xs */
+@media (max-width: 475px) {
+    .left .a{
+        font-size: 35px;
+    }
+
+    .left :is(.date, .b, .venue, .c){
+        font-size: 20px;
+    }
+
+    .right .p{
+        font-size: 0.8rem;
+    }
+
+    .left button{
+        width: 30%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .left .a{
+        font-size: 30px;
+    }
+
+    .left :is(.date, .b, .venue, .c){
+        font-size: 20px;
+    }
+
+    .right .p{
+        padding: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .left button{
+        width: 35%;
+        font-size: 15px;
+    }
+}
